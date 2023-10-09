@@ -24,6 +24,7 @@ function Hero({}: Props) {
         src={heroImg}
         alt="Picture of the author"
         className="rounded-full relative mx-auto object-cover h-32 w-32"
+        priority
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[8px]">
