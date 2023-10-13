@@ -1,7 +1,8 @@
 import React from "react";
-import { PhoneIcon, MapPinIcon } from "@heroicons/react/20/solid";
+import { ArrowDownTrayIcon, MapPinIcon } from "@heroicons/react/20/solid";
 import { HiOutlineMail } from "react-icons/hi";
 import { useForm, SubmitHandler } from "react-hook-form";
+import Link from "next/link";
 
 type Inputs = {
   name: string;
@@ -23,24 +24,38 @@ const Contact = (props: Props) => {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10">
-        <h3 className="text-2xl font-semibold text-center text-[#cabca3]">
+      <div className="flex flex-col space-y-6">
+        <h3 className="text-lg lg:text-2xl font-semibold text-center justify-center text-[#cabca3] mt-5">
           Please contact me for any inquiries:
         </h3>
 
-        <div className="flex items-center space-x-5 justify-center">
-          <HiOutlineMail className="text-gray-500 w-10 h-10" />
-          <p className="text-2xl text-[#cabca3]">byron303@gmail.com</p>
+        <div className="flex items-center space-x-5 justify-center text-center">
+          <Link href="/resume2023.pdf" target="_blank">
+            <ArrowDownTrayIcon className="text-gray-500 w-10 h-10" />
+          </Link>
+          <p className="text-md lg:text-lg text-[#cabca3]">
+            Download Resume PDF
+          </p>
         </div>
 
-        <div className="flex items-center space-x-5 justify-center">
-          <MapPinIcon className="text-gray-500 w-10 h-10" />
-          <p className="text-2xl text-[#cabca3]">Panajachel, Guatemala</p>
+        <div className="flex items-center space-x-4 justify-center">
+          <HiOutlineMail className="text-gray-500 w-10 h-10" />
+          <p className="text-md lg:text-lg text-[#cabca3]">
+            byron303@gmail.com
+          </p>
+        </div>
+
+        <div className="flex items-center space-x-2 justify-center">
+          <MapPinIcon className="text-gray-500 w-8 h-8" />
+          <p className="text-sm lg:text-md text-[#cabca3]">
+            Panajachel, Guatemala
+          </p>
         </div>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col space-y-2 w-fit mx-auto"
+          target="_blank"
         >
           <div className="flex space-x-2">
             <input

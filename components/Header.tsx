@@ -28,26 +28,31 @@ export default function Header({}: Props) {
           url="https://twitter.com/jesuispapafrita"
           fgColor="gray"
           bgColor="transparent"
+          target="_blank"
         />
         <SocialIcon
           url="https://instagram.com/kiitsui"
           fgColor="gray"
           bgColor="transparent"
+          target="_blank"
         />
         <SocialIcon
           url="https://github.com/byron-rod"
           fgColor="gray"
           bgColor="transparent"
+          target="_blank"
         />
         <SocialIcon
           url="https://facebook.com/byronrod.a"
           fgColor="gray"
           bgColor="transparent"
+          target="_blank"
         />
         <SocialIcon
           url="https://linkedin.com/in/byron-rodriguez-aragon/"
           fgColor="gray"
           bgColor="transparent"
+          target="_blank"
         />
       </motion.div>
       <motion.div
@@ -68,13 +73,13 @@ export default function Header({}: Props) {
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
         <SocialIcon
-          className="cursor-pointer"
+          className="cursor-pointer "
           network="email"
-          url="mailto:byron303@gmail.com"
+          href="#contact"
           fgColor="gray"
           bgColor="transparent"
         />
-        <p className="text-gray-400 hidden md:inline-flex text-sm">
+        <p className="text-gray-400 hidden md:inline-flex text-md">
           Contact Me
         </p>
       </motion.div>
