@@ -29,7 +29,7 @@ function About({}: Props) {
       }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-xl">
         About
       </h3>
       <motion.img
@@ -47,17 +47,17 @@ function About({}: Props) {
         }}
         src={aboutImgSrc.src}
         alt="Picture of the author"
-        className="-mb-20 md:mb-0 flex-shrink-0 rounded-full relative mx-auto object-cover h-48 w-48 md:h-64 md:w-64 md:rounded-lg xl:w-[300px] xl:h-[400px] mt-[60px]"
+        className="-mb-5 md:mb-10 flex-shrink-0 rounded-full relative mx-auto object-cover h-[10rem] w-[10rem] md:h-[18rem] md:w-64 md:rounded-lg xl:w-[300px] xl:h-[400px] mt-[120px]"
       />
-      <div className="space-y-10 px-0 md:px-10 mt-5">
-        <h5 className="text-2xl md:text-4xl xl:text-5xl und font-thin">
+      <div className="space-y-4 px-0 md:px-10 mt-1">
+        <h5 className="text-2xl md:text-4xl xl:text-5xl font-thin">
           Career{" "}
           <span className="underline decoration-[#18181a] animate-pulse">
             Overview:
           </span>{" "}
           <span className="mr-3 text-[#cabca3]">{text}</span>
         </h5>
-        <p className="text-md xl:text-lg">
+        <p className="text-sm lg:text-md xl:text-lg">
           I have an educational background in psychology, but my professional
           career centers around sales, social media, and marketing. I have over
           ten years of sales experience and six years of experience in digital

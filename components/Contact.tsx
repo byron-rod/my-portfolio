@@ -21,11 +21,11 @@ const Contact = (props: Props) => {
 
   return (
     <div className="h-screen flex relative overflow-hidden flex-col md:text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-xl">
         Contact
       </h3>
-      <div className="flex flex-col space-y-6">
-        <h3 className="text-lg lg:text-2xl font-semibold text-center justify-center text-[#cabca3] mt-5">
+      <div className="flex flex-col space-y-3 mt-[80px]">
+        <h3 className="text-md lg:text-xl font-semibold text-center justify-center text-[#cabca3] mt-10">
           Please contact me for any inquiries:
         </h3>
 
@@ -33,21 +33,21 @@ const Contact = (props: Props) => {
           <Link href="/resume2023.pdf" target="_blank">
             <ArrowDownTrayIcon className="text-gray-500 w-10 h-10" />
           </Link>
-          <p className="text-md lg:text-lg text-[#cabca3]">
+          <p className="text-sm lg:text-lg text-[#cabca3]">
             Download Resume PDF
           </p>
         </div>
 
         <div className="flex items-center space-x-4 justify-center">
           <HiOutlineMail className="text-gray-500 w-10 h-10" />
-          <p className="text-md lg:text-lg text-[#cabca3]">
+          <p className="text-sm lg:text-lg text-[#cabca3]">
             byron303@gmail.com
           </p>
         </div>
 
         <div className="flex items-center space-x-2 justify-center">
           <MapPinIcon className="text-gray-500 w-8 h-8" />
-          <p className="text-sm lg:text-md text-[#cabca3]">
+          <p className="text-xs lg:text-md text-[#cabca3]">
             Panajachel, Guatemala
           </p>
         </div>
