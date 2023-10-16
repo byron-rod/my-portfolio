@@ -6,7 +6,7 @@ import Link from "next/link";
 import ImageModal from "../components/ImageModal";
 import { FaGithub } from "react-icons/fa";
 
-const portfolio = () => {
+const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -92,4 +92,4 @@ const portfolio = () => {
   );
 };
 
-export default portfolio;
+export default Portfolio;

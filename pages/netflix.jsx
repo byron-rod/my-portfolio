@@ -7,7 +7,7 @@ import Link from "next/link";
 import ImageModal from "../components/ImageModal";
 import { FaGithub } from "react-icons/fa";
 
-const netflix = () => {
+const Netflix = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -108,4 +108,4 @@ const netflix = () => {
   );
 };
 
-export default netflix;
+export default Netflix;

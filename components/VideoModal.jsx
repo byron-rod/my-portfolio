@@ -3,21 +3,20 @@ import YouTube from "react-youtube";
 import { useState, useEffect } from "react";
 
 const VideoModal = ({ isOpen, onClose, videoUrl }) => {
-  if (!isOpen) return null;
-  const [videoWidth, setVideoWidth] = useState(380); // Default width for small screens
+  const [videoWidth, setVideoWidth] = useState(380);
   const [videoHeight, setVideoHeight] = useState(250);
 
   const updateVideoSize = () => {
     // Determine the desired video dimensions based on the screen width
     if (window.innerWidth >= 1280) {
-      setVideoWidth(800); // Adjust width for large screens
-      setVideoHeight(450); // Adjust height for large screens
+      setVideoWidth(800);
+      setVideoHeight(450);
     } else if (window.innerWidth >= 768) {
-      setVideoWidth(640); // Adjust width for medium-sized screens
-      setVideoHeight(360); // Adjust height for medium-sized screens
+      setVideoWidth(640);
+      setVideoHeight(360);
     } else {
-      setVideoWidth(380); // Default width for small screens
-      setVideoHeight(250); // Default height for small screens
+      setVideoWidth(380);
+      setVideoHeight(250);
     }
   };
 
@@ -28,6 +27,8 @@ const VideoModal = ({ isOpen, onClose, videoUrl }) => {
       window.removeEventListener("resize", updateVideoSize);
     };
   }, []);
+
+  if (!isOpen) return null;
 
   const opts = {
     height: videoHeight,

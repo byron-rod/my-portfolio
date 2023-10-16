@@ -8,7 +8,7 @@ import VideoModal from "../components/VideoModal";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
-const techjobs = () => {
+const Techjobs = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState();
@@ -66,12 +66,12 @@ const techjobs = () => {
           <h2 className="text-lg tracking-wide mb-1">Overview</h2>
           <p>
             This application was our final project for graduating from the
-            4Geeks Academy Boot Camp. It's a full-stack application using React
-            JS as the main library for Front-End. Bootstrap and custom CSS
+            4Geeks Academy Boot Camp. It&#39;s a full-stack application using
+            React JS as the main library for Front-End. Bootstrap and custom CSS
             styling was used for design. Basic email registration using password
             encryption with Bcrypt, we have Google Authorization login with
             Firebase. For the Back-End, we used Python, SQLAlchemy, and Flask
-            for REST API's. This application has all functionalities of a CRUD
+            for REST API. This application has all functionalities of a CRUD
             application. As a company, you can create your user, then a job
             posting, and edit or delete it. As a user, you can apply to a job
             posting connecting directly with EmailJS API for direct email
@@ -147,4 +147,4 @@ const techjobs = () => {
   );
 };
 
-export default techjobs;
+export default Techjobs;

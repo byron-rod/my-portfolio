@@ -7,7 +7,7 @@ import { useState } from "react";
 import ImageModal from "../components/ImageModal";
 import { FaGithub } from "react-icons/fa";
 
-const nike = () => {
+const Nike = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -101,4 +101,4 @@ const nike = () => {
   );
 };
 
-export default nike;
+export default Nike;
