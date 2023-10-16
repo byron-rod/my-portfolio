@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectsItem from "./ProjectItem.jsx";
-import nikeImg from "../public/nike.png";
+import nikeImg from "../public/images/nike-pro.png";
+import netflixImg from "../public/images/netflix-clone.png";
 
 const Projects = () => {
   return (
@@ -13,7 +14,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8 p-8">
           <ProjectsItem
             title="Netflix and Chill"
-            backgroundImg={nikeImg}
+            backgroundImg={netflixImg}
             projectUrl="/netflix"
             projectType="Full-Stack"
           />

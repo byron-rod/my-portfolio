@@ -17,7 +17,7 @@ const Details = ({ title, school, dates, description }) => {
 const WorkExperience = () => {
   return (
     <div className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-10 uppercase tracking-[20px] text-gray-500 text-xl mt-10">
+      <h3 className="absolute top-16 uppercase tracking-[20px] text-gray-500 text-xl mt-10">
         Education
       </h3>
       <div className="xl:w-[60%] lg:w-[80%] sm:w-full mx-auto mt-[100px]">
