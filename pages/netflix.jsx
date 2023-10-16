@@ -17,10 +17,10 @@ const netflix = () => {
   };
 
   return (
-    <div className="w-full bg-[#1c1b20]">
-      <div className="w-screen h-[50vh] relative">
+    <div className="w-full bg-[#1c1b20] scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]">
+      <div className="w-screen h-[50vh] relative scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]">
         <div
-          className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10 lg:hover:cursor-pointer"
+          className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10 lg:hover:cursor-pointer scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]"
           onClick={openModal}
         />
         <Image
