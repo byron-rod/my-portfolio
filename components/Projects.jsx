@@ -2,6 +2,8 @@ import React from "react";
 import ProjectsItem from "./ProjectItem.jsx";
 import nikeImg from "../public/images/nike-pro.png";
 import netflixImg from "../public/images/netflix-clone.png";
+import techImg from "../public/images/tech-jobs.png";
+import portImg from "../public/images/portfolio.png";
 
 const Projects = () => {
   return (
@@ -20,19 +22,19 @@ const Projects = () => {
           />
           <ProjectsItem
             title="Tech Jobs"
-            backgroundImg={nikeImg}
+            backgroundImg={techImg}
             projectUrl="/techjobs"
             projectType="Full-Stack"
           />
           <ProjectsItem
             title="Nike"
             backgroundImg={nikeImg}
-            projectUrl="/portfolio"
+            projectUrl="/nike"
             projectType="Front-End"
           />
           <ProjectsItem
             title="Portfolio"
-            backgroundImg={nikeImg}
+            backgroundImg={portImg}
             projectUrl="/portfolio"
             projectType="Front-End"
           />

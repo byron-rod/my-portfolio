@@ -1,12 +1,11 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import netflixImg from "../public/images/netflix-clone.png";
-import netflixModalImg from "../public/images/netflix-clone.png";
+import portfolioImg from "../public/images/portfolio.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import ImageModal from "../components/ImageModal";
 
-const netflix = () => {
+const portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -27,47 +26,35 @@ const netflix = () => {
           className="absolute z-1 lg:hover:cursor-pointer"
           fill
           style={{ objectFit: "cover" }}
-          src={netflixImg}
+          src={portfolioImg}
           alt="/"
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2 text-3xl font-semibold">Netflix and Chill</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2 text-3xl font-semibold">Personal Portfolio</h2>
+          <h3>Next JS / Tailwind / Framer Motion</h3>
         </div>
       </div>
 
       <div className="max-w-[1240px] md:mx-auto p-2 grid md:grid-cols-5 gap-8 py-8 mx-3">
         <div className="col-span-4 text-gray-500">
           <p className="text-xl tracking-[2px] my-2 font-semibold">
-            Full-Stack Project
+            Front-End Project
           </p>
           <h2 className="text-lg tracking-wide mb-1">Overview</h2>
           <p>
-            I built this application in React JS with TailwindCSS and is hosted
-            on GitHub pages. This app uses the IMDB API to pull movie data and
-            displays it in a similar UI to the Netflix homepage. You can create
-            your account and login using your email with Firebase authentication
-            as well as the Firestore cloud storage database for saved movies in
-            your list. The useContext hook is also being implemented for
-            app-wide state management.
+            My portfolio website was built using Next JS, one of the most
+            innovative frameworks for React.js. I used Tailwind CSS for styling
+            and Framer Motion for animations. The website is fully responsive
+            for mobile and desktop.
           </p>
           <a
-            href="https://github.com/byron-rod/netflix-n-chill"
+            href="https://github.com/byron-rod/my-portfolio"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-6 ml-3 bg-gray-400 rounded-xl text-black hover:bg-gray-700">
               Code
-            </button>
-          </a>
-          <a
-            href="https://byron-rod.github.io/netflix-n-chill/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="px-8 py-2 mt-4 bg-gray-400 rounded-xl text-black hover:bg-gray-700">
-              Demo
             </button>
           </a>
         </div>
@@ -100,10 +87,10 @@ const netflix = () => {
       <ImageModal
         isOpen={isModalOpen}
         onClose={closeModal}
-        imageUrl={netflixModalImg}
+        imageUrl={portfolioImg}
       />
     </div>
   );
 };
 
-export default netflix;
+export default portfolio;

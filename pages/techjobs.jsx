@@ -1,12 +1,11 @@
-import Image from "next/image";
 import React, { useState } from "react";
-import netflixImg from "../public/images/netflix-clone.png";
-import netflixModalImg from "../public/images/netflix-clone.png";
+import Image from "next/image";
+import ImageModal from "../components/ImageModal";
+import techImg from "../public/images/tech-jobs.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-import ImageModal from "../components/ImageModal";
 
-const netflix = () => {
+const techjobs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -15,25 +14,26 @@ const netflix = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-
   return (
-    <div className="w-full bg-[#1c1b20]">
-      <div className="w-screen h-[50vh] relative">
+    <div className="w-full bg-[#1c1b20] ">
+      <div className="w-screen h-[50vh] relative scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]">
         <div
-          className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10 lg:hover:cursor-pointer"
+          className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10 hover:cursor-pointer"
           onClick={openModal}
         />
         <Image
-          className="absolute z-1 lg:hover:cursor-pointer"
+          className="absolute z-1 hover:cursor-pointer"
           fill
           style={{ objectFit: "cover" }}
-          src={netflixImg}
+          src={techImg}
           alt="/"
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2 text-3xl font-semibold">Netflix and Chill</h2>
-          <h3>React JS / Tailwind / Firebase</h3>
+          <h2 className="py-2 text-3xl font-semibold">
+            Tech-Jobs Latin America
+          </h2>
+          <h3>React JS / Bootstrap / Python</h3>
         </div>
       </div>
 
@@ -44,16 +44,20 @@ const netflix = () => {
           </p>
           <h2 className="text-lg tracking-wide mb-1">Overview</h2>
           <p>
-            I built this application in React JS with TailwindCSS and is hosted
-            on GitHub pages. This app uses the IMDB API to pull movie data and
-            displays it in a similar UI to the Netflix homepage. You can create
-            your account and login using your email with Firebase authentication
-            as well as the Firestore cloud storage database for saved movies in
-            your list. The useContext hook is also being implemented for
-            app-wide state management.
+            This application was our final project for graduating from the
+            4Geeks Academy Boot Camp. It's a full-stack application using React
+            JS as the main library for Front-End. Boostrap and custom CSS
+            styling was used for design. Basic email registration using password
+            encryption with Bcrypt, we have Google Authorization login with
+            Firebase. For the Back-End, we used Python, SQLAlchemy, and Flask
+            for REST API's. This application has all functionalities of a CRUD
+            application. As a company you can create your user, then a job
+            posting, and edit or delete it. As a user you can apply to a job
+            posting connecting directly with EmailJS API for direct email
+            messaging to the company.
           </p>
           <a
-            href="https://github.com/byron-rod/netflix-n-chill"
+            href="https://github.com/4GeeksAcademy/latam_tech_jobs"
             target="_blank"
             rel="noreferrer"
           >
@@ -62,7 +66,7 @@ const netflix = () => {
             </button>
           </a>
           <a
-            href="https://byron-rod.github.io/netflix-n-chill/"
+            href="https://nike-tailwind-bice.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -79,16 +83,28 @@ const netflix = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> Bootstrap
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
+                <RiRadioButtonFill className="pr-1" /> CSS
+              </p>
+              <p className="text-black-600 py-2 flex items-center ml-3">
+                <RiRadioButtonFill className="pr-1" /> Python
+              </p>
+              <p className="text-black-600 py-2 flex items-center ml-3">
+                <RiRadioButtonFill className="pr-1" /> Flask
+              </p>
+              <p className="text-black-600 py-2 flex items-center ml-3">
+                <RiRadioButtonFill className="pr-1" /> SQLAlchemy
+              </p>
+              <p className="text-black-600 py-2 flex items-center ml-3">
                 <RiRadioButtonFill className="pr-1" /> Firebase
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> IMDB API
+                <RiRadioButtonFill className="pr-1" /> EmailJS API
               </p>
             </div>
           </div>
@@ -100,10 +116,10 @@ const netflix = () => {
       <ImageModal
         isOpen={isModalOpen}
         onClose={closeModal}
-        imageUrl={netflixModalImg}
+        imageUrl={techImg}
       />
     </div>
   );
 };
 
-export default netflix;
+export default techjobs;

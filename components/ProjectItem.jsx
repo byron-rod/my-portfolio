@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import nikeImage from "../public/images/nike-pro.png";
 import Link from "next/link";
 
 const ProjectItem = ({ title, backgroundImg, projectUrl, projectType }) => {
@@ -17,7 +16,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, projectType }) => {
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{projectType}</p>
         <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-md bg-white text-gray-500 text-lg cursor-pointer px-12">
+          <p className="text-center py-3 rounded-md bg-white text-black text-lg cursor-pointer px-12">
             More Info
           </p>
         </Link>
