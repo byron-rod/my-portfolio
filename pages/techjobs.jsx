@@ -1,25 +1,46 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import ImageModal from "../components/ImageModal";
 import techImg from "../public/images/tech-jobs.png";
 import { RiRadioButtonFill } from "react-icons/ri";
+import { useState, useEffect } from "react";
+import VideoModal from "../components/VideoModal";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 const techjobs = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const openModal = () => {
-    setIsModalOpen(true);
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [videoUrl, setVideoUrl] = useState();
+
+  const openImageModal = () => {
+    setIsImageModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const openVideoModal = () => {
+    setIsVideoModalOpen(true);
   };
+
+  const closeImageModal = () => {
+    setIsImageModalOpen(false);
+  };
+
+  const closeVideoModal = () => {
+    setIsVideoModalOpen(false);
+  };
+
+  useEffect(() => {
+    if (isVideoModalOpen) {
+      setVideoUrl("https://www.youtube.com/watch?v=oafhUOu66dk");
+    }
+  }, [isVideoModalOpen]);
+
   return (
-    <div className="w-full bg-[#1c1b20] ">
+    <div className="w-full bg-[#1c1b20]">
       <div className="w-screen h-[50vh] relative scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]">
         <div
           className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10 hover:cursor-pointer"
-          onClick={openModal}
+          onClick={openImageModal}
         />
         <Image
           className="absolute z-1 hover:cursor-pointer"
@@ -27,7 +48,7 @@ const techjobs = () => {
           style={{ objectFit: "cover" }}
           src={techImg}
           alt="/"
-          onClick={openModal}
+          onClick={openImageModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2 text-3xl font-semibold">
@@ -46,34 +67,33 @@ const techjobs = () => {
           <p>
             This application was our final project for graduating from the
             4Geeks Academy Boot Camp. It's a full-stack application using React
-            JS as the main library for Front-End. Boostrap and custom CSS
+            JS as the main library for Front-End. Bootstrap and custom CSS
             styling was used for design. Basic email registration using password
             encryption with Bcrypt, we have Google Authorization login with
             Firebase. For the Back-End, we used Python, SQLAlchemy, and Flask
             for REST API's. This application has all functionalities of a CRUD
-            application. As a company you can create your user, then a job
-            posting, and edit or delete it. As a user you can apply to a job
+            application. As a company, you can create your user, then a job
+            posting, and edit or delete it. As a user, you can apply to a job
             posting connecting directly with EmailJS API for direct email
             messaging to the company.
           </p>
-          <a
+          <Link
             href="https://github.com/4GeeksAcademy/latam_tech_jobs"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-6 ml-3 bg-gray-400 rounded-xl text-black hover:bg-gray-700">
+            <button className="px-6 py-2 mt-4 mr-6 ml-3 bg-gray-400 rounded-xl text-black hover:bg-gray-700">
+              <FaGithub className="inline-block mr-1 justify-center text-xl" />
               Code
             </button>
-          </a>
-          <a
-            href="https://nike-tailwind-bice.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
+          </Link>
+
+          <button
+            className="px-8 py-2 mt-4 bg-gray-400 rounded-xl text-black hover-bg-gray-700"
+            onClick={openVideoModal}
           >
-            <button className="px-8 py-2 mt-4 bg-gray-400 rounded-xl text-black hover:bg-gray-700">
-              Demo
-            </button>
-          </a>
+            Demo
+          </button>
         </div>
         <div className="col-span-4 lg:col-span-1 shadow-xl shadow-gray-700 rounded-xl py-4 bg-gray-300/80 mx-3">
           <div className="p-2">
@@ -114,9 +134,14 @@ const techjobs = () => {
         </Link>
       </div>
       <ImageModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
+        isOpen={isImageModalOpen}
+        onClose={closeImageModal}
         imageUrl={techImg}
+      />
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={closeVideoModal}
+        videoUrl={videoUrl}
       />
     </div>
   );

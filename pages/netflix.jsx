@@ -5,6 +5,7 @@ import netflixModalImg from "../public/images/netflix-clone.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import ImageModal from "../components/ImageModal";
+import { FaGithub } from "react-icons/fa";
 
 const netflix = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -57,7 +58,8 @@ const netflix = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-6 ml-3 bg-gray-400 rounded-xl text-black hover:bg-gray-700">
+            <button className="px-6 py-2 mt-4 mr-6 ml-3 bg-gray-400 rounded-xl text-black hover:bg-gray-700">
+              <FaGithub className="inline-block mr-1 justify-center text-xl" />
               Code
             </button>
           </a>
