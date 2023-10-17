@@ -3,37 +3,22 @@ import Image from "next/image";
 import ImageModal from "../components/ImageModal";
 import techImg from "../public/images/tech-jobs.png";
 import { RiRadioButtonFill } from "react-icons/ri";
-import { useState, useEffect } from "react";
-import VideoModal from "../components/VideoModal";
+import { useState } from "react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import VideoModal from "../components/VideoModal";
 
 const Techjobs = () => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-  const [videoUrl, setVideoUrl] = useState();
+  const [showVideoModal, setShowVideoModal] = useState(false);
 
+  // Image Modal
   const openImageModal = () => {
     setIsImageModalOpen(true);
   };
-
-  const openVideoModal = () => {
-    setIsVideoModalOpen(true);
-  };
-
   const closeImageModal = () => {
     setIsImageModalOpen(false);
   };
-
-  const closeVideoModal = () => {
-    setIsVideoModalOpen(false);
-  };
-
-  useEffect(() => {
-    if (isVideoModalOpen) {
-      setVideoUrl("https://www.youtube.com/watch?v=oafhUOu66dk");
-    }
-  }, [isVideoModalOpen]);
 
   return (
     <div className="w-full bg-[#1c1b20] overflow-x-hidden scrollbar scrollbar-track-[#1c1b20] scrollbar-thumb-gray-400">
@@ -44,6 +29,7 @@ const Techjobs = () => {
         />
         <Image
           className="absolute z-1 hover:cursor-pointer"
+          priority
           fill
           style={{ objectFit: "cover" }}
           src={techImg}
@@ -89,7 +75,7 @@ const Techjobs = () => {
 
           <button
             className="px-8 py-2 mt-4 bg-[#cabca3] rounded-xl text-black hover-bg-gray-700"
-            onClick={openVideoModal}
+            onClick={() => setShowVideoModal(true)}
           >
             Demo
           </button>
@@ -140,10 +126,19 @@ const Techjobs = () => {
         imageUrl={techImg}
       />
       <VideoModal
-        isOpen={isVideoModalOpen}
-        onClose={closeVideoModal}
-        videoUrl={videoUrl}
-      />
+        isVisible={showVideoModal}
+        onClose={() => setShowVideoModal(false)}
+      >
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/Bgh0y4BC72Q?si=fPA_Z73BOGjWvWeE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </VideoModal>
     </div>
   );
 };

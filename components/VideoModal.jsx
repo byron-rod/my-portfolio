@@ -1,59 +1,30 @@
 import React from "react";
-import YouTube from "react-youtube";
-import { useState, useEffect } from "react";
 
-const VideoModal = ({ isOpen, onClose, videoUrl }) => {
-  const [videoWidth, setVideoWidth] = useState(380);
-  const [videoHeight, setVideoHeight] = useState(250);
+const VideoModal = ({ isVisible, onClose, children }) => {
+  if (!isVisible) return null;
 
-  const updateVideoSize = () => {
-    // Determine the desired video dimensions based on the screen width
-    if (window.innerWidth >= 1280) {
-      setVideoWidth(800);
-      setVideoHeight(450);
-    } else if (window.innerWidth >= 768) {
-      setVideoWidth(640);
-      setVideoHeight(360);
-    } else {
-      setVideoWidth(380);
-      setVideoHeight(250);
-    }
+  const handleClose = (e = {}) => {
+    if (e.target?.id === "wrapper") onClose();
   };
-
-  useEffect(() => {
-    // Update video size when the window size changes
-    window.addEventListener("resize", updateVideoSize);
-    return () => {
-      window.removeEventListener("resize", updateVideoSize);
-    };
-  }, []);
-
-  if (!isOpen) return null;
-
-  const opts = {
-    height: videoHeight,
-    width: videoWidth,
-    playerVars: {
-      autoplay: 1,
-    },
-  };
-
-  const videoId = (videoUrl ?? "").split("v=")[1];
 
   return (
-    <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-80 z-50">
-      <div className="max-w-3/4 bg-gray-600 rounded-lg p-4">
-        <button
-          className="absolute top-40 md:top-28 lg:top-16 justify-center text-white hover:text-gray-700"
-          onClick={onClose}
-        >
-          Close
-        </button>
-        <div className="w-full h-auto  relative">
-          <YouTube videoId={videoId} opts={opts} />
+    <>
+      <div
+        className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center z-50"
+        id="wrapper"
+        onClick={(e) => handleClose(e)}
+      >
+        <div className="w-[400px] md:w-[50%] flex flex-col">
+          <button
+            className="text-white text-xl place-self-end"
+            onClick={() => onClose()}
+          >
+            X
+          </button>
+          <div className="bg-white p-2 rounded-md z-20">{children}</div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

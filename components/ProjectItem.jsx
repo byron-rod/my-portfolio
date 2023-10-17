@@ -9,6 +9,7 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, projectType }) => {
         className="rounded-xl group-hover:opacity-10"
         src={backgroundImg}
         alt="Background Image"
+        priority
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-lg md:text-2xl text-black font-semibold text-center">

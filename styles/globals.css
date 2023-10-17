@@ -14,3 +14,5 @@
     line-height: 1.1rem;
   }
 }
+
+@import "react-responsive-modal/styles.css";
