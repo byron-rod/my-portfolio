@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 flex items-start justify-between mx-auto max-w-7xl z-20 xl:items-center p-5">
+    <header className="sticky top-0 flex items-start justify-between mx-auto max-w-7xl z-20 xl:items-center p-5 backdrop-filter bg-opacity-100">
       <motion.div
         initial={{
           x: -500,
@@ -25,12 +25,6 @@ export default function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <SocialIcon
-          url="https://twitter.com/jesuispapafrita"
-          fgColor="gray"
-          bgColor="transparent"
-          target="_blank"
-        />
-        <SocialIcon
           url="https://instagram.com/kiitsui"
           fgColor="gray"
           bgColor="transparent"
@@ -38,12 +32,6 @@ export default function Header({}: Props) {
         />
         <SocialIcon
           url="https://github.com/byron-rod"
-          fgColor="gray"
-          bgColor="transparent"
-          target="_blank"
-        />
-        <SocialIcon
-          url="https://facebook.com/byronrod.a"
           fgColor="gray"
           bgColor="transparent"
           target="_blank"
@@ -75,7 +63,7 @@ export default function Header({}: Props) {
         <SocialIcon
           className="cursor-pointer "
           network="email"
-          href=""
+          href="/#contact"
           fgColor="gray"
           bgColor="transparent"
         />

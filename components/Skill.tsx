@@ -111,7 +111,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">60%</p>
+            <p className="text-2xl font-bold text-black opacity-100">70%</p>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">70%</p>
+            <p className="text-2xl font-bold text-black opacity-100">75%</p>
           </div>
         </div>
       </div>
@@ -147,7 +147,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">60%</p>
+            <p className="text-2xl font-bold text-black opacity-100">70%</p>
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">50%</p>
+            <p className="text-2xl font-bold text-black opacity-100">60%</p>
           </div>
         </div>
       </div>

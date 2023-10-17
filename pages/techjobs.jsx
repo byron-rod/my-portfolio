@@ -36,8 +36,8 @@ const Techjobs = () => {
   }, [isVideoModalOpen]);
 
   return (
-    <div className="w-full bg-[#1c1b20]">
-      <div className="w-screen h-[50vh] relative scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]">
+    <div className="w-full bg-[#1c1b20] overflow-x-hidden scrollbar scrollbar-track-[#1c1b20] scrollbar-thumb-gray-400">
+      <div className="w-screen h-[50vh] relative -400/20 ">
         <div
           className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10 hover:cursor-pointer"
           onClick={openImageModal}
@@ -59,7 +59,7 @@ const Techjobs = () => {
       </div>
 
       <div className="max-w-[1240px] md:mx-auto p-2 grid md:grid-cols-5 gap-8 py-8 mx-3">
-        <div className="col-span-4 text-gray-500">
+        <div className="col-span-4 text-gray-300">
           <p className="text-xl tracking-[2px] my-2 font-semibold">
             Full-Stack Project
           </p>
@@ -71,66 +71,67 @@ const Techjobs = () => {
             styling was used for design. Basic email registration using password
             encryption with Bcrypt, we have Google Authorization login with
             Firebase. For the Back-End, we used Python, SQLAlchemy, and Flask
-            for REST API. This application has all functionalities of a CRUD
+            for REST API. This application has basic functionalities of a CRUD
             application. As a company, you can create your user, then a job
-            posting, and edit or delete it. As a user, you can apply to a job
-            posting connecting directly with EmailJS API for direct email
-            messaging to the company.
+            post, and delete it. As a user, you can apply to a job connecting
+            directly with EmailJS API for direct email messaging to the company.
           </p>
           <Link
             href="https://github.com/4GeeksAcademy/latam_tech_jobs"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-6 py-2 mt-4 mr-6 ml-3 bg-gray-400 rounded-xl text-black hover:bg-gray-700">
+            <button className="px-6 py-2 mt-4 mr-6 ml-3 bg-[#cabca3] rounded-xl text-black hover:bg-gray-700">
               <FaGithub className="inline-block mr-1 justify-center text-xl" />
               Code
             </button>
           </Link>
 
           <button
-            className="px-8 py-2 mt-4 bg-gray-400 rounded-xl text-black hover-bg-gray-700"
+            className="px-8 py-2 mt-4 bg-[#cabca3] rounded-xl text-black hover-bg-gray-700"
             onClick={openVideoModal}
           >
             Demo
           </button>
         </div>
-        <div className="col-span-4 lg:col-span-1 shadow-xl shadow-gray-700 rounded-xl py-4 bg-gray-300/80 mx-3">
+        <div className="col-span-4 lg:col-span-1 shadow-xl shadow-gray-800 rounded-xl py-4 bg-[#cabca3]/80 mx-3">
           <div className="p-2">
             <p className="text-center font-bold pb-2 text-xl">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> Bootstrap
               </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> CSS
               </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> Python
               </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> Flask
               </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> SQLAlchemy
               </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> Firebase
               </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
+              <p className="text-black-600 text-sm md:text-base py-2 flex items-center ml-1 md:ml-3">
                 <RiRadioButtonFill className="pr-1" /> EmailJS API
               </p>
             </div>
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer text-gray-500">Back</p>
+          <p className="underline cursor-pointer text-xl text-[#cabca3]">
+            Back
+          </p>
         </Link>
       </div>
       <ImageModal

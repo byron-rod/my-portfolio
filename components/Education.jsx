@@ -2,13 +2,14 @@ import React from "react";
 
 const Details = ({ title, school, dates, description }) => {
   return (
-    <li className="my-5 lg:my-6 first:mt-0 last:mb-1 w-full mx-auto flex flex-col items-center justify-between text-gray-500">
+    <li className="my-2 lg:my-4 first:mt-0 last:mb-8 w-full mx-auto flex flex-col items-center justify-between text-gray-300">
       <div className="">
-        <h3 className="text-md md:text-xl lg:text-2xl xl:text-2xl font-semibold lg:mb-3 mb-1">
-          {title}&nbsp;@ <span className="text-[#cabca3]">{school}</span>
+        <h3 className="text-md md:text-xl lg:text-xl xl:text-2xl font-semibold lg:mb-3">
+          {title}&nbsp;@{" "}
+          <span className="text-[#cabca3] font-bold">{school}</span>
         </h3>
-        <span className="py-5 uppercase text-gray-300 text-sm">{dates}</span>
-        <p className="text-sm font-medium w-full">{description}</p>
+        <span className="py-3 uppercase text-gray-300 smallText">{dates}</span>
+        <p className="smallText md:text-sm font-medium w-full">{description}</p>
       </div>
     </li>
   );
@@ -17,10 +18,10 @@ const Details = ({ title, school, dates, description }) => {
 const WorkExperience = () => {
   return (
     <div className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-16 uppercase tracking-[20px] text-gray-500 text-xl mt-10">
+      <h3 className="relative md:absolute top-12 md:top-14 uppercase tracking-[20px] text-gray-500 text-xl xl:text-2xl mt-8">
         Education
       </h3>
-      <div className="xl:w-[60%] lg:w-[80%] sm:w-full mx-auto mt-[100px]">
+      <div className="xl:w-[60%] lg:w-[80%] sm:w-full mx-auto mt-[70px]">
         <div className="absolute left-8 top-0 w-[4px]  text-white" />
         <ul className="w-full flex flex-col items-start justify-between">
           <Details

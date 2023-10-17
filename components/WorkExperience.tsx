@@ -9,13 +9,14 @@ export type Props = {
 
 const Details = ({ position, company, dates, work }: Props) => {
   return (
-    <li className="my-5 lg:my-6 first:mt-0 last:mb-1 w-full mx-auto flex flex-col items-center justify-between text-gray-500">
+    <li className="my-2 lg:my-4 first:mt-0 last:mb-8 w-full mx-auto flex flex-col items-center justify-between text-gray-300">
       <div className="">
-        <h3 className="text-md md:text-xl lg:text-xl xl:text-2xl font-semibold lg:mb-3 mb-1">
-          {position}&nbsp;@ <span className="text-[#cabca3]">{company}</span>
+        <h3 className="text-md md:text-xl lg:text-xl xl:text-2xl font-semibold lg:mb-3">
+          {position}&nbsp;@{" "}
+          <span className="text-[#cabca3] font-bold">{company}</span>
         </h3>
-        <span className="py-5 uppercase text-gray-300 text-sm">{dates}</span>
-        <p className="text-sm md:text-sm font-medium w-full">{work}</p>
+        <span className="py-3 uppercase text-gray-300 smallText">{dates}</span>
+        <p className="smallText md:text-sm font-medium w-full">{work}</p>
       </div>
     </li>
   );
@@ -24,10 +25,10 @@ const Details = ({ position, company, dates, work }: Props) => {
 const WorkExperience = (props: Props) => {
   return (
     <div className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-16 uppercase tracking-[20px] text-gray-500 text-xl mt-10">
+      <h3 className="relative md:absolute top-12 md:top-14 uppercase tracking-[20px] text-gray-500 text-xl xl:text-2xl mt-8">
         Experience
       </h3>
-      <div className="xl:w-[60%] lg:w-[80%] sm:w-full mx-auto mt-[100px]">
+      <div className="xl:w-[60%] lg:w-[80%] sm:w-full mx-auto mt-[70px]">
         <div className="absolute left-8 top-0 w-[4px]  text-white" />
         <ul className="w-full flex flex-col items-start justify-between">
           <Details
@@ -35,23 +36,21 @@ const WorkExperience = (props: Props) => {
             company="Origami Management"
             dates="2021 - Present"
             work="Realtor, Airbnb Superhost, and property manager for different vacation rentals:
-            property maintenance, social media management,
-            video editing,
-            real estate photography,
-            five-star customer service,
-            calendar management"
+            property maintenance, social media management, video editing, and five-star customer service."
           />
           <Details
             position="Social Media Manager"
             company="Homes Guatemala"
             dates="2016 - 2021"
-            work="Social Media Manager and Marketing coordinator. Content creator and video editing for company webiste, Instagram, Tik-Tok and Facebook. Google and Meta Ads. Copywriting for Email Marketing."
+            work="Social Media Manager and Marketing coordinator. Content creator and video editing for company 
+            webiste, Instagram, Tik-Tok and Facebook. Copywriting for Email Marketing."
           />
           <Details
             position="Sales Supervisor"
-            company="Royal Caribbean"
+            company="Xerox Guatemala"
             dates="2014 - 2016"
-            work="Supervisor for Customer Service Sales Representatives for Royal Caribbean International Cruises and Onboarding Trainer for new representatives, assisting human resourses with recruitment."
+            work="Supervisor for Customer Service Sales Representatives for Royal Carribbean and Onboarding Trainer for new representatives, 
+            assisting human resourses with recruitment."
           />
         </ul>
       </div>
