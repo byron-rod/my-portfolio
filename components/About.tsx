@@ -58,15 +58,15 @@ function About({}: Props) {
           <span className="mr-3 text-[#cabca3]">{text}</span>
         </h5>
         <p className="smallText md:text-sm lg:text-md xl:text-lg">
-          I have an educational background in psychology, but my professional
-          career centers around sales, social media marketing, and SEO. I have
-          always been passionate about technology, video games, and especially
-          computers. After I completed my first application with JavaScript, I
-          fell in love with programming, so I began my journey to become a
-          full-stack developer in 2023. I graduated from a boot camp at 4Geeks
-          Academy. I have been exploring the world of coding, learning more each
-          day, and looking to start my carrer as a software engineer/web
-          developer.
+          I have an educational background in clinical psychology, but my
+          professional career centers around sales, social media marketing, and
+          SEO. I have always been passionate about technology, video games, and
+          especially computers. After I completed my first application with
+          JavaScript, I fell in love with programming, so I began my journey to
+          become a full-stack developer in 2023. I graduated from a boot camp at
+          4Geeks Academy. I have been exploring the world of coding, learning
+          more each day, and looking to start my carrer as a software
+          engineer/web developer.
         </p>
       </div>
     </motion.div>

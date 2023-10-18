@@ -14,7 +14,7 @@ const VideoModal = ({ isVisible, onClose, children }) => {
         id="wrapper"
         onClick={(e) => handleClose(e)}
       >
-        <div className="w-[400px] md:w-[50%] flex flex-col">
+        <div className="w-[400px] md:w-[50%] flex flex-col p-2">
           <button
             className="text-white text-xl place-self-end"
             onClick={() => onClose()}

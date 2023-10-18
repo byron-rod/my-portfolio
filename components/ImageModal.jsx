@@ -9,8 +9,16 @@ const ImageModal = ({ isOpen, onClose, imageUrl }) => {
     return null;
   }
 
+  const handleClose = (e = {}) => {
+    if (e.target?.id === "wrapper") onClose();
+  };
+
   return (
-    <div className="hidden md:block lg:block fixed top-0 left-0 w-screen h-screen items-center justify-center bg-black bg-opacity-80 z-50">
+    <div
+      className="hidden md:block lg:block fixed top-0 left-0 w-screen h-screen items-center justify-center bg-black bg-opacity-80 z-50 "
+      id="wrapper"
+      onClick={(e) => handleClose(e)}
+    >
       <div className="max-w-3/4 bg-grey-100 rounded-lg p-8 flex flex-col items-center">
         <div className="relative lg:h-[450px] lg:w-[900px]">
           <Image
