@@ -132,9 +132,8 @@ const Techjobs = () => {
         <iframe
           width="100%"
           height="315"
-          src="https://www.youtube.com/embed/Bgh0y4BC72Q?si=fPA_Z73BOGjWvWeE"
+          src="https://www.youtube.com/embed/cIko_7gDLuk?si=ipmatEcnY2gbOUMA"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>

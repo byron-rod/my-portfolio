@@ -46,8 +46,8 @@ const Nike = () => {
           <p>
             I built this front-end website with React JS and is hosted on
             Vercel. This App is a mockup of a Nike retail website. The complete
-            E-commerce front-end was created using all the best practices for
-            React and TailwindCSS.
+            Nike e-commerce front-end was created using all the best practices
+            for React and TailwindCSS.
           </p>
           <a
             href="https://github.com/byron-rod/nike-tailwind"

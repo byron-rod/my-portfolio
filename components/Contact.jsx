@@ -73,7 +73,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="bg-gray-500 rounded-xl shadow-lg p-5 md:w-80">
+          <div className="bg-gray-500 rounded-xl p-5 md:w-80 shadow-md shadow-gray-700">
             <form
               onSubmit={handleSubmit}
               className="emailForm flex flex-col space-y-4 text-black"

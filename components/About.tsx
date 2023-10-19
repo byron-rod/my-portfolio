@@ -29,7 +29,7 @@ function About({}: Props) {
       }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="relative md:absolute top-20 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
+      <h3 className="relative md:absolute top-14 md:top-24 lg:top-28 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
         About
       </h3>
       <motion.img
@@ -47,9 +47,9 @@ function About({}: Props) {
         }}
         src={aboutImgSrc.src}
         alt="Picture of the author"
-        className="mb-2 md:mb-10 flex-shrink-0 rounded-full relative mx-auto object-cover h-[10rem] w-[10rem] md:h-[18rem] md:w-64 md:rounded-lg xl:w-[300px] xl:h-[400px] mt-[100px]"
+        className="mb-0 md:mb-12 flex-shrink-0 rounded-full relative mx-auto object-cover h-[12rem] w-[12rem] md:h-[18rem] md:w-64 md:rounded-lg xl:w-[300px] xl:h-[400px] mt-[70px]"
       />
-      <div className="space-y-4 px-0 md:px-10 mt-1">
+      <div className="space-y-3 px-0 md:px-10 mt-1 mb-9">
         <h5 className="text-3xl md:text-4xl xl:text-4xl font-thin">
           <span className="hidden md:inline">Career </span>
           <span className="hidden md:inline decoration-[#18181a] animate-pulse">
@@ -63,8 +63,8 @@ function About({}: Props) {
           SEO. I have always been passionate about technology, video games, and
           especially computers. After I completed my first application with
           JavaScript, I fell in love with programming, so I began my journey to
-          become a full-stack developer in 2023. I graduated from a boot camp at
-          4Geeks Academy. I have been exploring the world of coding, learning
+          become a full-stack developer in 2023 and graduated from a boot camp
+          at 4Geeks Academy. I have been exploring the world of coding, learning
           more each day, and looking to start my carrer as a software
           engineer/web developer.
         </p>

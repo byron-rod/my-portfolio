@@ -20,26 +20,26 @@ export default function Home() {
       <section id="hero" className="snap-start">
         <Hero />
       </section>
-      <section id="about" className="snap-center">
+      <section id="about" className="md:snap-center">
         <About />
       </section>
-      <section id="exp" className="snap-center">
+      <section id="exp" className="md:snap-center">
         {/* @ts-ignore */}
         <WorkExperience />
       </section>
-      <section id="education" className="snap-center">
+      <section id="education" className="md:snap-center">
         <Education />
       </section>
-      <section id="skills" className="snap-center">
+      <section id="skills" className="md:snap-center">
         <Skills />
       </section>
-      <section id="projects" className="snap-center">
+      <section id="projects" className="">
         <Projects />
       </section>
       <section id="contact" className="">
         <Contact />
       </section>
-      <footer className="mb-[40px] bottom-5 p-11">
+      <footer className="mb-[10px] bottom-5 p-11">
         <Link href="#hero">
           <Footer />
         </Link>
