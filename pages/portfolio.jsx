@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import portfolioImg from "../public/images/portfolioBan.svg";
+import portfolioImg from "../public/images/portfolioBan.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import ImageModal from "../components/ImageModal";

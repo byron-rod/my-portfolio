@@ -15,10 +15,11 @@ export default function Home() {
     <div className="antialiased bg-[#1c1b20] text-white h-screen snap-y overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/5 scrollbar-thumb-[#1c1b20]">
       <Head>
         <title>Byron Rodriguez Portfolio</title>
-        <meta name="description">
-          This is a portfolio website for Byron Rodriguez, web developer and
-          software engineer from Guatemala.
-        </meta>
+        <meta
+          name="description"
+          content="This is a portfolio website for Byron Rodriguez, web developer and
+          software engineer from Guatemala."
+        />
       </Head>
       <Header />
       <section id="hero" className="snap-start">

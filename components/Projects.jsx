@@ -1,11 +1,11 @@
 import React from "react";
 import ProjectsItem from "./ProjectItem.jsx";
-import nikeImg from "../public/images/nikeBan.svg";
-import netflixImg from "../public/images/netflixBan.svg";
-import techImg from "../public/images/techBan.svg";
-import portImg from "../public/images/portafolioBan.svg";
-import campImg from "../public/images/campsiteBan.svg";
-import byronImg from "../public/images/byronEatsBan.svg";
+import nikeImg from "../public/images/nikeBan.jpg";
+import netflixImg from "../public/images/netflixBan.jpg";
+import techImg from "../public/images/techjobsBan.jpg";
+import portImg from "../public/images/portfolioBan.jpg";
+import campImg from "../public/images/campsiteBan.jpg";
+import byronImg from "../public/images/byronEatsBan.jpg";
 
 const Projects = () => {
   return (

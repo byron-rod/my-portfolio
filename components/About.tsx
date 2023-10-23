@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../public/images/byronAbout.svg";
+import aboutImg from "../public/images/byronAbout.jpg";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
