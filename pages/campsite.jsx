@@ -29,7 +29,7 @@ const Nike = () => {
           style={{ objectFit: "cover" }}
           src={campImg}
           alt="screenshot of campsite website"
-          quality={25}
+          quality={20}
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
