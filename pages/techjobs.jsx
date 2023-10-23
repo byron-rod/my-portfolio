@@ -33,7 +33,7 @@ const Techjobs = () => {
           fill
           style={{ objectFit: "cover" }}
           src={techImg}
-          alt="/"
+          alt="screen shot of techjobs website"
           onClick={openImageModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -66,6 +66,7 @@ const Techjobs = () => {
             href="https://github.com/4GeeksAcademy/latam_tech_jobs"
             target="_blank"
             rel="noreferrer"
+            aria-label="Github Link"
           >
             <button className="px-6 py-2 mt-4 mr-6 ml-3 bg-[#cabca3] rounded-xl text-black hover:bg-gray-700">
               <FaGithub className="inline-block mr-1 justify-center text-xl" />
@@ -76,6 +77,7 @@ const Techjobs = () => {
           <button
             className="px-8 py-2 mt-4 bg-[#cabca3] rounded-xl text-black hover-bg-gray-700"
             onClick={() => setShowVideoModal(true)}
+            aria-label="link to video demo in youtube"
           >
             Demo
           </button>

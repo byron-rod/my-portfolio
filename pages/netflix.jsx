@@ -29,7 +29,8 @@ const Netflix = () => {
           fill
           style={{ objectFit: "cover" }}
           src={netflixImg}
-          alt="/"
+          alt="screen shot of netflix clone website"
+          quality={30}
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -57,6 +58,7 @@ const Netflix = () => {
             href="https://github.com/byron-rod/netflix-n-chill"
             target="_blank"
             rel="noreferrer"
+            aria-label="link to github repo"
           >
             <button className="px-6 py-2 mt-4 mr-6 ml-3 bg-[#cabca3] rounded-xl text-black hover:bg-gray-700">
               <FaGithub className="inline-block mr-1 justify-center text-xl" />
@@ -67,6 +69,7 @@ const Netflix = () => {
             href="https://byron-rod.github.io/netflix-n-chill/"
             target="_blank"
             rel="noreferrer"
+            aria-label="link to live website"
           >
             <button className="px-8 py-2 mt-4 bg-[#cabca3] rounded-xl text-black hover:bg-gray-700">
               Demo

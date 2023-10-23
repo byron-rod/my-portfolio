@@ -28,7 +28,8 @@ const Nike = () => {
           fill
           style={{ objectFit: "cover" }}
           src={nikeImg}
-          alt="/"
+          alt="screen shot of nike website"
+          quality={30}
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -53,6 +54,7 @@ const Nike = () => {
             href="https://github.com/byron-rod/nike-tailwind"
             target="_blank"
             rel="noreferrer"
+            aria-label="link to github repo"
           >
             <button className="px-6 py-2 mt-4 mr-6 ml-3 bg-[#cabca3] rounded-xl text-black hover:bg-[#cabca3]">
               <FaGithub className="inline-block mr-1 justify-center text-xl" />
@@ -63,6 +65,7 @@ const Nike = () => {
             href="https://nike-tailwind-bice.vercel.app/"
             target="_blank"
             rel="noreferrer"
+            aria-label="link to live webiste demo"
           >
             <button className="px-8 py-2 mt-4 bg-[#cabca3] rounded-xl text-black hover:bg-gray-700">
               Demo

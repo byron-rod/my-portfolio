@@ -21,7 +21,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={htmlImg}
-          alt="skill"
+          alt="HTML"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -33,7 +33,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={cssImg}
-          alt="skill"
+          alt="CSS"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -45,7 +45,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={jsImg}
-          alt="skill"
+          alt="JavaScript"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -57,7 +57,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={reactImg}
-          alt="skill"
+          alt="ReactJS"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -69,7 +69,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={bootstrapImg}
-          alt="skill"
+          alt="Bootstrap"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -81,7 +81,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={tailwindImg}
-          alt="skill"
+          alt="TawilwindCSS"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -93,7 +93,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={nextImg}
-          alt="skill"
+          alt="NextJS"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -105,7 +105,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={pythonImg}
-          alt="skill"
+          alt="Python"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -117,7 +117,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={sqlImg}
-          alt="skill"
+          alt="SQL"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -129,7 +129,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={firebaseImg}
-          alt="skill"
+          alt="Firebase"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -141,7 +141,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={mongoImg}
-          alt="skill"
+          alt="MongoDB"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
@@ -153,7 +153,7 @@ function Skill({}: Props) {
       <div className="group relative flex cursor-pointer">
         <Image
           src={nodeImg}
-          alt="skill"
+          alt="NodeJS"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">

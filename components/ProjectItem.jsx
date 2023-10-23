@@ -10,15 +10,19 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, projectType }) => {
         src={backgroundImg}
         alt="Background Image"
         priority
+        quality={25}
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-lg md:text-2xl text-black font-semibold text-center">
           {title}
         </h3>
         <p className="pb-2 pt-2 text-gray-200 text-center">{projectType}</p>
-        <Link href={projectUrl}>
-          <p className="text-center py-2 rounded-md bg-white text-black text-sm md:text-lg cursor-pointer mb-2 px-8 md:px-12">
-            More Info
+        <Link
+          href={projectUrl}
+          aria-label="more information about the web applications is available on this links"
+        >
+          <p className="text-center py-2 rounded-md bg-white text-black font-semibold text-xs md:text-sm cursor-pointer mb-2 px-8 md:px-12">
+            Project Demo
           </p>
         </Link>
       </div>

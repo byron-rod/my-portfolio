@@ -48,7 +48,7 @@ function Contact() {
         <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-1 w-full max-w-xl p-8">
           <div className="flex flex-col space-y-8 justify-between">
             <div>
-              <h3 className="uppercase tracking-[20px] text-gray-500 text-xl md:text-2xl mb-4 text-center">
+              <h3 className="uppercase tracking-[20px] text-gray-300 text-xl md:text-2xl mb-4 text-center">
                 Contact
               </h3>
               <p className="pt-2 text-gray-300 text-sm mt-8">
@@ -65,7 +65,11 @@ function Contact() {
                 <span className="text-gray-300">+502-3882-4965</span>
               </div>
               <div className="inline-flex space-x-2 items-center">
-                <Link href="/resume2023.pdf" target="_blank">
+                <Link
+                  href="/resume2023.pdf"
+                  aria-label="link to download my resume in pdf"
+                  target="_blank"
+                >
                   <HiDocumentDownload className="text-gray-400 text-2xl" />
                 </Link>
                 <span className="text-gray-400">Download Resume PDF</span>
@@ -82,6 +86,7 @@ function Contact() {
                 <input
                   type="text"
                   placeholder="Name"
+                  autoComplete="name"
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -92,6 +97,7 @@ function Contact() {
                 <input
                   type="email"
                   placeholder="Email"
+                  autoComplete="email"
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}

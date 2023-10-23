@@ -27,7 +27,7 @@ function Hero({}: Props) {
         priority
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-400 pb-2 tracking-[8px]">
+        <h2 className="text-sm uppercase text-gray-300 pb-2 tracking-[8px]">
           Full-Stack Developer
         </h2>
         <h1 className="text-2xl lg:text-3xl font-semibold px-10">
