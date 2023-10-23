@@ -12,7 +12,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="antialiased scroll-smooth bg-[#1c1b20] text-white h-screen snap-y overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/5 scrollbar-thumb-[#1c1b20]">
+    <div className="antialiased bg-[#1c1b20] text-white h-screen snap-y overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/5 scrollbar-thumb-[#1c1b20]">
       <Head>
         <title>Byron Rodriguez</title>
       </Head>

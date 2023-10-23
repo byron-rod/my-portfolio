@@ -9,7 +9,7 @@ import byronImg from "../public/images/byron-eats.png";
 
 const Projects = () => {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-8">
         <h3 className="top-24 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl mt-9 mb-0 text-center">
           Projects
