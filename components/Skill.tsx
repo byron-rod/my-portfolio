@@ -1,18 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
-import bootstrapImg from "../public/bootstrap.png";
-import reactImg from "../public/react.png";
-import cssImg from "../public/css.png";
-import htmlImg from "../public/html.png";
-import jsImg from "../public/javascript.png";
-import tailwindImg from "../public/twcsslogo.png";
-import nextImg from "../public/nextjswhite.png";
-import pythonImg from "../public/python.png";
-import sqlImg from "../public/sql.png";
-import firebaseImg from "../public/firebaselogo.png";
-import nodeImg from "../public/nodejs.png";
-import mongoImg from "../public/mondoDB.png";
+import bootstrapImg from "../public/images/bootstrap.svg";
+import reactImg from "../public/images/react.svg";
+import cssImg from "../public/images/css.svg";
+import htmlImg from "../public/images/html.svg";
+import jsImg from "../public/images/js.svg";
+import tailwindImg from "../public/images/tailwind.svg";
+import nextImg from "../public/images/next.svg";
+import pythonImg from "../public/images/python.svg";
+import sqlImg from "../public/images/sql.svg";
+import firebaseImg from "../public/images/firebase2.svg";
+import nodeImg from "../public/images/node.svg";
+import mongoImg from "../public/images/mongo.svg";
 
 type Props = {};
 

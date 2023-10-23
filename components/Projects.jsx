@@ -1,11 +1,11 @@
 import React from "react";
 import ProjectsItem from "./ProjectItem.jsx";
-import nikeImg from "../public/images/nike-pro.png";
-import netflixImg from "../public/images/netflix-clone.png";
-import techImg from "../public/images/tech-jobs.png";
-import portImg from "../public/images/portfolio.png";
-import campImg from "../public/images/campsite.png";
-import byronImg from "../public/images/byron-eats.png";
+import nikeImg from "../public/images/nikeBan.svg";
+import netflixImg from "../public/images/netflixBan.svg";
+import techImg from "../public/images/techBan.svg";
+import portImg from "../public/images/portafolioBan.svg";
+import campImg from "../public/images/campsiteBan.svg";
+import byronImg from "../public/images/byronEatsBan.svg";
 
 const Projects = () => {
   return (
@@ -21,36 +21,42 @@ const Projects = () => {
             backgroundImg={netflixImg}
             projectUrl="/netflix"
             projectType="Full-Stack"
+            aria-label="Netflix clone full stack project that has its code and demo available"
           />
           <ProjectsItem
             title="Tech Jobs"
             backgroundImg={techImg}
             projectUrl="/techjobs"
             projectType="Full-Stack"
+            aria-label="Job board full stack project that has its code and demo available"
           />
           <ProjectsItem
             title="Nike"
             backgroundImg={nikeImg}
             projectUrl="/nike"
             projectType="Front-End"
+            aria-label="Nike ecommerce landing page project that has its code and demo available"
           />
           <ProjectsItem
             title="Byron Eats"
             backgroundImg={byronImg}
             projectUrl="/byroneats"
             projectType="Front-End"
+            aria-label="Uber eats clone front-end project that has its code and demo available"
           />
           <ProjectsItem
             title="Portfolio"
             backgroundImg={portImg}
             projectUrl="/portfolio"
             projectType="Front-End"
+            aria-label="The code for My portfolio project that has its code"
           />
           <ProjectsItem
             title="Campsite"
             backgroundImg={campImg}
             projectUrl="/campsite"
             projectType="Front-End"
+            aria-label="Campsite landing page application, front-end project that has its code and demo available"
           />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ImageModal from "../components/ImageModal";
-import techImg from "../public/images/tech-jobs.png";
+import techImg from "../public/images/techBan.svg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { useState } from "react";
 import Link from "next/link";

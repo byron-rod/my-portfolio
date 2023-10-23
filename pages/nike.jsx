@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import nikeImg from "../public/images/nike-pro.png";
+import nikeImg from "../public/images/nikeBan.svg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { useState } from "react";

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import byronImg from "../public/images/byron-eats.png";
+import byronImg from "../public/images/byronEatsBan.svg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { useState } from "react";
