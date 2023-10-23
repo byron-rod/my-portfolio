@@ -29,9 +29,9 @@ function About({}: Props) {
       }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="relative md:absolute top-14 md:top-24 lg:top-28 uppercase tracking-[20px] text-gray-300 text-xl lg:text-2xl">
+      <h2 className="relative md:absolute top-14 md:top-24 lg:top-28 uppercase tracking-[20px] text-gray-300 text-xl lg:text-2xl">
         About
-      </h3>
+      </h2>
       <motion.img
         initial={{
           x: -100,
@@ -50,13 +50,13 @@ function About({}: Props) {
         className="mb-0 md:mb-12 flex-shrink-0 rounded-full relative mx-auto object-cover h-[12rem] w-[12rem] md:h-[18rem] md:w-64 md:rounded-lg xl:w-[300px] xl:h-[400px] mt-[70px]"
       />
       <div className="space-y-3 px-0 md:px-10 mt-1 mb-9">
-        <h4 className="text-3xl md:text-4xl xl:text-4xl font-thin">
+        <h3 className="text-3xl md:text-4xl xl:text-4xl font-thin">
           <span className="hidden md:inline">Career </span>
           <span className="hidden md:inline decoration-[#18181a] animate-pulse">
             Overview:
           </span>{" "}
           <span className="mr-3 text-[#cabca3]">{text}</span>
-        </h4>
+        </h3>
         <p className="smallText md:text-sm lg:text-md xl:text-lg">
           I have an educational background in clinical psychology, but my
           professional career centers around sales, social media marketing, and

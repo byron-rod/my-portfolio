@@ -33,6 +33,7 @@ const Techjobs = () => {
           fill
           style={{ objectFit: "cover" }}
           src={techImg}
+          quality={25}
           alt="screen shot of techjobs website"
           onClick={openImageModal}
         />

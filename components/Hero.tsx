@@ -25,6 +25,7 @@ function Hero({}: Props) {
         alt="Picture of the author"
         className="rounded-full relative mx-auto object-cover h-32 w-32"
         priority
+        quality={30}
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-300 pb-2 tracking-[8px]">
@@ -32,7 +33,7 @@ function Hero({}: Props) {
         </h2>
         <h1 className="text-2xl lg:text-3xl font-semibold px-10">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor="white" />
+          {/* <Cursor cursorColor="white" /> */}
         </h1>
 
         <div className="pt-5">

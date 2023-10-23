@@ -29,7 +29,7 @@ const Portfolio = () => {
           style={{ objectFit: "cover" }}
           src={portfolioImg}
           alt="screen shot of portfolio website"
-          quality={30}
+          quality={25}
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -49,7 +49,8 @@ const Portfolio = () => {
             innovative frameworks for React.js. I used Tailwind CSS for styling
             and Framer Motion for animations. EmailJS API was used for contact
             form direct messages. The website is fully responsive for mobile and
-            desktop.
+            desktop. Website has an almost perfect score in all categories on
+            Google Lighthouse.
           </p>
           <a
             href="https://github.com/byron-rod/my-portfolio"

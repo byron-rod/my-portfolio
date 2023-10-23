@@ -20,6 +20,7 @@ export default function Home() {
           content="This is a portfolio website for Byron Rodriguez, web developer and
           software engineer from Guatemala."
         />
+        <meta name="theme-color" content="#1c1b20" />
       </Head>
       <Header />
       <section id="hero" className="snap-start">

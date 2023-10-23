@@ -30,7 +30,7 @@ const Netflix = () => {
           style={{ objectFit: "cover" }}
           src={netflixImg}
           alt="screen shot of netflix clone website"
-          quality={30}
+          quality={25}
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
