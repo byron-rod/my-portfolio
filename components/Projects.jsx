@@ -5,6 +5,7 @@ import netflixImg from "../public/images/netflix-clone.png";
 import techImg from "../public/images/tech-jobs.png";
 import portImg from "../public/images/portfolio.png";
 import campImg from "../public/images/campsite.png";
+import byronImg from "../public/images/byron-eats.png";
 
 const Projects = () => {
   return (
@@ -31,6 +32,12 @@ const Projects = () => {
             title="Nike"
             backgroundImg={nikeImg}
             projectUrl="/nike"
+            projectType="Front-End"
+          />
+          <ProjectsItem
+            title="Byron Eats"
+            backgroundImg={byronImg}
+            projectUrl="/byroneats"
             projectType="Front-End"
           />
           <ProjectsItem
