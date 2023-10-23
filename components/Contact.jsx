@@ -82,6 +82,7 @@ function Contact() {
                 <input
                   type="text"
                   placeholder="Name"
+                  id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="ring-1 ring-gray-200 w-full rounded-md px-4 py-2 outilne-none text-black focus:ring-2 focus:ring-[#cabca3] bg-gray-300"
@@ -91,6 +92,7 @@ function Contact() {
                 <input
                   type="email"
                   placeholder="Email"
+                  id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="ring-1 ring-gray-200 bg-gray-300 w-full rounded-md px-4 py-2 outilne-none text-gray-800 focus:ring-2 focus:ring-[#cabca3]"
@@ -100,6 +102,7 @@ function Contact() {
                 <textarea
                   rows={4}
                   placeholder="Message"
+                  id="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   className="ring-1 ring-gray-200 bg-gray-300 w-full rounded-md px-4 py-2 outilne-none text-gray-800 focus:ring-2 focus:ring-[#cabca3]"
