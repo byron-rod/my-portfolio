@@ -17,7 +17,7 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 gap-4 p-6 md:p-14">
           <ProjectsItem
-            title="Netflix and Chill"
+            title="Netflix Clone"
             backgroundImg={netflixImg}
             projectUrl="/netflix"
             projectType="Full-Stack"
