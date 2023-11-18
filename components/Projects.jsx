@@ -6,6 +6,7 @@ import techImg from "../public/images/techjobsBan.jpg";
 import portImg from "../public/images/portfolioBan.jpg";
 import campImg from "../public/images/campsiteBan.jpg";
 import byronImg from "../public/images/byronEatsBan.jpg";
+import foodyBuddyImg from "../public/images/foodybuddy.jpg";
 
 const Projects = () => {
   return (
@@ -29,6 +30,13 @@ const Projects = () => {
             projectUrl="/techjobs"
             projectType="Full-Stack"
             aria-label="Job board full stack project that has its code and demo available"
+          />
+          <ProjectsItem
+            title="Foody Buddy"
+            backgroundImg={foodyBuddyImg}
+            projectUrl="/foodybuddy"
+            projectType="Front-End"
+            aria-label="The code for Foody Buddy a Google Map app"
           />
           <ProjectsItem
             title="Nike"
