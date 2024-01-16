@@ -34,11 +34,10 @@ const WorkExperience = (props: Props) => {
         <div className="absolute left-8 top-0 w-[4px]  text-white" />
         <ul className="w-full flex flex-col items-start justify-between">
           <Details
-            position="Property Manager"
+            position="Social Media Manager"
             company="Origami Management"
             dates="2021 - Present"
-            work="Realtor, Airbnb Superhost, and property manager for different vacation rentals:
-            property maintenance, social media management, video editing, and five-star customer service."
+            work="Search Engine Optimization for Amazon and Google, social media management for Meta, Tik-Tok and LinkedIn. Video editing and content creation."
           />
           <Details
             position="Social Media Manager"

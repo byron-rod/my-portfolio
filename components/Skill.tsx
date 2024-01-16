@@ -26,7 +26,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">95%</p>
+            <p className="text-2xl font-bold text-black opacity-100">HTML</p>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">90%</p>
+            <p className="text-2xl font-bold text-black opacity-100">CSS</p>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">85%</p>
+            <p className="text-2xl font-bold text-black opacity-100">JS</p>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">90%</p>
+            <p className="text-2xl font-bold text-black opacity-100">React</p>
           </div>
         </div>
       </div>
@@ -74,19 +74,21 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">90%</p>
+            <p className="text-xl font-bold text-black opacity-100">
+              Bootstrap
+            </p>
           </div>
         </div>
       </div>
       <div className="group relative flex cursor-pointer">
         <Image
           src={tailwindImg}
-          alt="TawilwindCSS"
+          alt="TailwindCSS"
           className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">95%</p>
+            <p className="text-xl font-bold text-black opacity-100">Tailwind</p>
           </div>
         </div>
       </div>
@@ -98,7 +100,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">70%</p>
+            <p className="text-2xl font-bold text-black opacity-100">Next</p>
           </div>
         </div>
       </div>
@@ -110,7 +112,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">70%</p>
+            <p className="text-2xl font-bold text-black opacity-100">Python</p>
           </div>
         </div>
       </div>
@@ -122,7 +124,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">75%</p>
+            <p className="text-2xl font-bold text-black opacity-100">SQL</p>
           </div>
         </div>
       </div>
@@ -134,7 +136,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">75%</p>
+            <p className="text-xl font-bold text-black opacity-100">Firebase</p>
           </div>
         </div>
       </div>
@@ -146,7 +148,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">70%</p>
+            <p className="text-xl font-bold text-black opacity-100">MongoDB</p>
           </div>
         </div>
       </div>
@@ -158,7 +160,7 @@ function Skill({}: Props) {
         />
         <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0">
           <div className="flex items-center justify-center h-full">
-            <p className="text-2xl font-bold text-black opacity-100">60%</p>
+            <p className="text-2xl font-bold text-black opacity-100">Node</p>
           </div>
         </div>
       </div>
