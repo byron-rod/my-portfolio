@@ -30,7 +30,7 @@ const WorkExperience = () => {
             title="Full Stack Web Developer"
             school="4Geeks Academy"
             dates="May 2023 - September 2023"
-            description="Full-Stack Development with knowledge in HTML, CSS, Bootstrap, Tailwind, JavaScript, React.js, React UI, Node.js, Express.js, Next.js, SQL, PostgreSQL, MongoDB, Python, and Flask"
+            description="Full-Stack Development with knowledge in HTML, CSS, Bootstrap, Tailwind, JavaScript, React.js, React UI, Node.js, Express.js, Next.js, SQL, PostgreSQL, MongoDB, Python, and Flask."
           />
           <Details
             title="Google Digital Marketing Specialization"
