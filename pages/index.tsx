@@ -17,8 +17,8 @@ export default function Home() {
         <title>Byron Rodriguez Portfolio</title>
         <meta
           name="description"
-          content="This is a portfolio website for Byron Rodriguez, web developer and
-          software engineer from Guatemala."
+          content="My name is Byron Rodriguez. I am a full-stack web developer, software engineer, SEO specialist and
+          social media marketer."
         />
         <meta name="theme-color" content="#1c1b20" />
       </Head>
