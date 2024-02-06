@@ -66,7 +66,7 @@ function Contact() {
               </div>
               <div className="inline-flex space-x-2 items-center">
                 <Link
-                  href="/resume2023.pdf"
+                  href="/resume2024.pdf"
                   aria-label="link to download my resume in pdf"
                   target="_blank"
                 >
