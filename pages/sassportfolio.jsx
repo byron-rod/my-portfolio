@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import campImg from "../public/images/campsiteBan.jpg";
+import sassPortfolio from "../public/images/sass-port.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { useState } from "react";
 import ImageModal from "../components/ImageModal";
 import { FaGithub } from "react-icons/fa";
 
-const Campsite = () => {
+const SassPortfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -27,14 +27,14 @@ const Campsite = () => {
           className="absolute z-1 lg:hover:cursor-pointer"
           fill
           style={{ objectFit: "cover" }}
-          src={campImg}
-          alt="screenshot of campsite website"
+          src={sassPortfolio}
+          alt="screensshot of portfolio website"
           quality={20}
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2 text-3xl font-semibold">Campsite Landing Page</h2>
-          <h3>Next JS / Tailwind / CSS</h3>
+          <h2 className="py-2 text-3xl font-semibold">SASS Portfolio</h2>
+          <h3>CSS / SASS / LESS</h3>
         </div>
       </div>
 
@@ -45,13 +45,13 @@ const Campsite = () => {
           </p>
           <h2 className="text-lg tracking-wide mb-1">Overview</h2>
           <p>
-            I built this front-end website with Next JS and is hosted on Vercel.
-            This is a landing page for a camping application. The complete
-            Campsite front-end was created using all the best practices for Next
-            JS and TailwindCSS.
+            This portfolio was created using advanced CSS, SCSS and Less. Basic
+            Javascrtipt was used to create the responsive dropdown menu. The
+            project was made using BEM best practices, CSS grid, and SASS
+            animations. The portfolio is fully responsive.
           </p>
           <a
-            href="https://github.com/byron-rod/campsite-tailwind"
+            href="https://github.com/byron-rod/portfolio-css"
             target="_blank"
             rel="noreferrer"
             aria-label="link to github repo"
@@ -62,7 +62,7 @@ const Campsite = () => {
             </button>
           </a>
           <a
-            href="https://campsite-tailwind.vercel.app/"
+            href="https://portfolio-sass-three.vercel.app/"
             target="_blank"
             rel="noreferrer"
             aria-label="link to live demo website"
@@ -77,16 +77,16 @@ const Campsite = () => {
             <p className="text-center font-bold pb-2 text-xl">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> Next.js
-              </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
-              </p>
-              <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> HTML
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
                 <RiRadioButtonFill className="pr-1" /> CSS
+              </p>
+              <p className="text-black-600 py-2 flex items-center ml-3">
+                <RiRadioButtonFill className="pr-1" /> SCSS
+              </p>
+              <p className="text-black-600 py-2 flex items-center ml-3">
+                <RiRadioButtonFill className="pr-1" /> LESS
               </p>
             </div>
           </div>
@@ -100,10 +100,10 @@ const Campsite = () => {
       <ImageModal
         isOpen={isModalOpen}
         onClose={closeModal}
-        imageUrl={campImg}
+        imageUrl={sassPortfolio}
       />
     </div>
   );
 };
 
-export default Campsite;
+export default SassPortfolio;

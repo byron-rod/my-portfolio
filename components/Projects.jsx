@@ -7,6 +7,7 @@ import portImg from "../public/images/portfolioBan.jpg";
 import campImg from "../public/images/campsiteBan.jpg";
 import byronImg from "../public/images/byronEatsBan.jpg";
 import foodyBuddyImg from "../public/images/foodybuddy.jpg";
+import sassPortfolio from "../public/images/sass-port.jpg";
 
 const Projects = () => {
   return (
@@ -23,6 +24,13 @@ const Projects = () => {
             projectUrl="/netflix"
             projectType="Full-Stack"
             aria-label="Netflix clone full stack project that has its code and demo available"
+          />
+          <ProjectsItem
+            title="SASS Portfolio"
+            backgroundImg={sassPortfolio}
+            projectUrl="/sassportfolio"
+            projectType="Front-End"
+            aria-label="SASS portfolio project"
           />
           <ProjectsItem
             title="Tech Jobs"
