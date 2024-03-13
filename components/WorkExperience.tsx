@@ -34,17 +34,17 @@ const WorkExperience = (props: Props) => {
         <div className="absolute left-8 top-0 w-[4px]  text-white" />
         <ul className="w-full flex flex-col items-start justify-between">
           <Details
-            position="Content Strategist"
+            position="Social Media Marketing"
             company="Origami Management"
             dates="2021 - Present"
-            work="SEO specialist, social media marketing for Meta, listing optimization and PPC campaings for Amazon products. 
-            Video editing and optimizing content to align with SEO goals."
+            work="SEO specialist, social media marketing for Meta, and social media manager. Optimizing content to align with SEO and marketing goals. 
+            Help build brand presence with marketing campaings."
           />
           <Details
             position="Social Media Manager"
             company="Homes Guatemala"
             dates="2016 - 2021"
-            work="Social Media Manager and Marketing coordinator. Content creator and video editing for company 
+            work="Social Media Manager and Marketing coordinator. Community manager, content creation and video editing for company 
             webiste, Instagram, TikTok and Facebook. Copywriting for Email Marketing."
           />
           <Details

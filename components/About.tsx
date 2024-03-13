@@ -59,7 +59,7 @@ function About({}: Props) {
         </h3>
         <p className="smallText md:text-sm lg:text-md xl:text-lg">
           I have an educational background in clinical psychology, but my
-          professional career centers around sales, social media marketing, and
+          professional career centers around sales, social media management, and
           SEO. I have always been passionate about technology, video games, and
           especially computers. After I completed my first application with
           JavaScript in 2022, I fell in love with programming, prompting me to

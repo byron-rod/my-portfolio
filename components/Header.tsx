@@ -29,12 +29,14 @@ export default function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
           target="_blank"
+          className="transform transition duration-500 hover:scale-110"
         />
         <SocialIcon
           url="https://linkedin.com/in/byron-rodriguez-aragon/"
           fgColor="gray"
           bgColor="transparent"
           target="_blank"
+          className="transform transition duration-500 hover:scale-110"
         />
       </motion.div>
       <motion.div
@@ -55,7 +57,7 @@ export default function Header({}: Props) {
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
         <SocialIcon
-          className="cursor-pointer "
+          className="cursor-pointer transform transition duration-500 hover:scale-110"
           network="email"
           href="/#contact"
           fgColor="gray"
