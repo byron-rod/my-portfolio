@@ -30,7 +30,7 @@ const WorkExperience = (props: Props) => {
       <h3 className="relative md:absolute top-12 mb-2 md:top-16 lg:top-22 uppercase tracking-[17px] md:tracking-[20px] text-gray-300 text-xl xl:text-2xl mt-3 md:mt-4">
         Experience
       </h3>
-      <div className="xl:w-[60%] lg:w-[80%] 2xl:w-[60%] sm:w-full mx-auto mt-[40px] md:mt-[80px]">
+      <div className="xl:w-[75%] lg:w-[75%] 2xl:w-[75%] sm:w-full mx-auto mt-[40px] md:mt-[80px]">
         <div className="absolute left-8 top-0 w-[4px]  text-white" />
         <ul className="w-full flex flex-col items-start justify-between">
           <Details
