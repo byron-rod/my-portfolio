@@ -36,16 +36,16 @@ const WorkExperience = (props: Props) => {
           <Details
             position="Social Media Marketing"
             company="Origami Management"
-            dates="2021 - Present"
-            work="SEO specialist, social media marketing for Meta, and social media manager. Optimizing content to align with SEO and marketing goals. 
+            dates="2021 - 2024"
+            work="SEO specialist, social media marketing for Meta, and community manager. Optimizing content to align with SEO and marketing goals. 
             Help build brand presence with marketing campaings."
           />
           <Details
             position="Social Media Manager"
             company="Homes Guatemala"
             dates="2016 - 2021"
-            work="Social Media Manager and Marketing coordinator. Community manager, content creation and video editing for company 
-            webiste, Instagram, TikTok and Facebook. Copywriting for Email Marketing."
+            work="Community manager and Marketing coordinator. Content creation and video editing for company 
+            website, Instagram, TikTok and Facebook. Copywriting for Email Marketing."
           />
           <Details
             position="Sales Supervisor"
