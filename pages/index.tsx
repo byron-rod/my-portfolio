@@ -21,6 +21,7 @@ export default function Home() {
           social media marketer."
         />
         <meta name="theme-color" content="#1c1b20" />
+        <meta name="msvalidate.01" content="E3231BA4D15254EECC14130F0CE607A7" />
       </Head>
       <Header />
       <section id="hero" className="snap-start">
