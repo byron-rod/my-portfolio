@@ -10,9 +10,9 @@ type Props = {};
 function Hero({}: Props) {
   const [text] = useTypewriter({
     words: [
-      "#SocialMediaManager",
+      "#CommunityManager",
       "<fullStackDeveloper/>",
-      "+SEO Specialist =",
+      "http://SEO-Specialist",
       "I am Byron Rodriguez",
     ],
     loop: true,
