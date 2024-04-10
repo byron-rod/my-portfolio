@@ -36,7 +36,7 @@ const WorkExperience = () => {
             title="Google Digital Marketing Specialization"
             school="Google / Coursera"
             dates="June 2022 - November 2022"
-            description="Digital Marketing & E-Commerce Specialization with knowledge in Google Ads, Google Analytics, Google Marketing Platform, and Google My Business."
+            description="Digital Marketing & E-Commerce Specialization with knowledge in Google Ads, Google Analytics, Google Marketing Platform, and Google Data Studio."
           />
           <Details
             title="Meta Certified Digital Marketing Associate"
