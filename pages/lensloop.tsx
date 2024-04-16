@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import portfolioImg from "../public/images/portfolioBan.webp";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import ImageModal from "../components/ImageModal";
 import { FaGithub } from "react-icons/fa";
+import lensLoop from "../public/images/lensloop.jpg";
 
-const Portfolio = () => {
+const LensLoop = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
@@ -17,43 +17,46 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="w-full bg-[#1c1b20] overflow-x-hidden scrollbar scrollbar-track-[#1c1b20] scrollbar-thumb-gray-400">
-      <div className="w-screen h-[50vh] relative">
+    <div className="w-full bg-[#1c1b20] overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]">
+      <div className="w-screen h-[50vh] relative scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]">
         <div
-          className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10 lg:hover:cursor-pointer"
+          className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10 lg:hover:cursor-pointer scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1c1b20]"
           onClick={openModal}
         />
         <Image
           className="absolute z-1 lg:hover:cursor-pointer"
           fill
           style={{ objectFit: "cover" }}
-          src={portfolioImg}
-          alt="screen shot of portfolio website"
-          quality={30}
+          src={lensLoop}
+          alt="screen shot of netflix clone website"
+          quality={25}
           onClick={openModal}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2 text-3xl font-semibold">Personal Portfolio</h2>
-          <h3>Next JS / Tailwind / Framer Motion</h3>
+          <h2 className="py-2 text-3xl font-semibold">LensLoop</h2>
+          <h3>React JS / TypeScript / Appwrite</h3>
         </div>
       </div>
 
       <div className="max-w-[1240px] md:mx-auto p-2 grid md:grid-cols-5 gap-8 py-8 mx-3">
         <div className="col-span-4 text-gray-300">
           <p className="text-xl tracking-[2px] my-2 font-semibold">
-            Front-End Project
+            Full-Stack Project
           </p>
           <h2 className="text-lg tracking-wide mb-1">Overview</h2>
           <p>
-            My portfolio website was built using Next JS, one of the most
-            innovative frameworks for React.js. I used Tailwind CSS for styling
-            and Framer Motion for animations. EmailJS API was used for contact
-            form direct messages. The website is fully responsive for mobile and
-            desktop. Website has an almost perfect score in all categories on
-            Google Lighthouse.
+            I built this application in React JS, TypeScript, TailwindCSS for
+            styling and is hosted on Vercel. This app is a Instagram clone,
+            where users can signup, post pictures, like and save favorite posts.
+            The application is connected to Appwrite, which is an open-source
+            backend server that helps to build web and mobile applications
+            faster. It uses React Query for auto caching, managing memory and
+            garabage collection of server state, updating "out of date" data in
+            the background, and performance optimizations like pagination,
+            infinite scrolling and lazy loading data.
           </p>
           <a
-            href="https://github.com/byron-rod/my-portfolio"
+            href="https://github.com/byron-rod/LensLoop"
             target="_blank"
             rel="noreferrer"
             aria-label="link to github repo"
@@ -63,22 +66,35 @@ const Portfolio = () => {
               Code
             </button>
           </a>
+          <a
+            href="https://lens-loop-beta.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="link to live website"
+          >
+            <button className="px-8 py-2 mt-4 bg-[#cabca3] rounded-xl text-black hover:bg-gray-700">
+              Demo
+            </button>
+          </a>
         </div>
-        <div className="col-span-4 lg:col-span-1 shadow-xl shadow-gray-900 rounded-xl py-4 bg-[#cabca3]/90 mx-3">
+        <div className="col-span-4 lg:col-span-1 shadow-xl shadow-gray-800 rounded-xl py-4 bg-[#cabca3]/80 mx-3">
           <div className="p-2">
             <p className="text-center font-bold pb-2 text-xl">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> Next.js
+                <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
                 <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> TypeScript
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> Framer Motion
+                <RiRadioButtonFill className="pr-1" /> Appwrite
+              </p>
+              <p className="text-black-600 py-2 flex items-center ml-3">
+                <RiRadioButtonFill className="pr-1" /> React Query
               </p>
             </div>
           </div>
@@ -92,10 +108,10 @@ const Portfolio = () => {
       <ImageModal
         isOpen={isModalOpen}
         onClose={closeModal}
-        imageUrl={portfolioImg}
+        imageUrl={lensLoop}
       />
     </div>
   );
 };
 
-export default Portfolio;
+export default LensLoop;

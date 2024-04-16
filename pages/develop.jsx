@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import developLanding from "../public/images/develop.jpg";
+import developLanding from "../public/images/develop.webp";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { useState } from "react";

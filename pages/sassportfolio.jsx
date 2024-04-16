@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import sassPortfolio from "../public/images/sass-port.jpg";
+import sassPortfolio from "../public/images/sass-port.webp";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { useState } from "react";

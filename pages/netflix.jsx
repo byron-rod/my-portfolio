@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import netflixImg from "../public/images/netflixBan.jpg";
-import netflixModalImg from "../public/images/netflixBan.jpg";
+import netflixImg from "../public/images/netflixBan.webp";
+import netflixModalImg from "../public/images/netflixBan.webp";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import ImageModal from "../components/ImageModal";

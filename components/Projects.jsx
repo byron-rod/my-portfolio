@@ -1,14 +1,15 @@
 import React from "react";
 import ProjectsItem from "./ProjectItem.jsx";
-import nikeImg from "../public/images/nikeBan.jpg";
-import netflixImg from "../public/images/netflixBan.jpg";
-import techImg from "../public/images/techjobsBan.jpg";
-import portImg from "../public/images/portfolioBan.jpg";
-import campImg from "../public/images/campsiteBan.jpg";
-import byronImg from "../public/images/byronEatsBan.jpg";
-import foodyBuddyImg from "../public/images/foodybuddy.jpg";
-import sassPortfolio from "../public/images/sass-port.jpg";
-import developLanding from "../public/images/develop.jpg";
+import nikeImg from "../public/images/nikeBan.webp";
+import netflixImg from "../public/images/netflixBan.webp";
+import techImg from "../public/images/techjobsBan.webp";
+import portImg from "../public/images/portfolioBan.webp";
+import campImg from "../public/images/campsiteBan.webp";
+import byronImg from "../public/images/byronEatsBan.webp";
+import foodyBuddyImg from "../public/images/foodybuddy.webp";
+import sassPortfolio from "../public/images/sass-port.webp";
+import developLanding from "../public/images/develop.webp";
+import lensLoop from "../public/images/lensloop.jpg";
 
 const Projects = () => {
   return (
@@ -19,6 +20,13 @@ const Projects = () => {
         </h3>
 
         <div className="grid md:grid-cols-2 gap-4 p-6 md:p-14">
+          <ProjectsItem
+            title="LensLoop"
+            backgroundImg={lensLoop}
+            projectUrl="/lensloop"
+            projectType="Full-Stack"
+            aria-label="Instagram clone full stack project that has its code and demo available"
+          />
           <ProjectsItem
             title="Netflix Clone"
             backgroundImg={netflixImg}

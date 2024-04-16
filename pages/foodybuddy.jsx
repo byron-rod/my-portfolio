@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import foodyBuddyImg from "../public/images/foodybuddy.jpg";
+import foodyBuddyImg from "../public/images/foodybuddy.webp";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import ImageModal from "../components/ImageModal";
