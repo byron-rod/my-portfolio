@@ -51,7 +51,7 @@ const LensLoop = () => {
             The application is connected to Appwrite, which is an open-source
             backend server that helps to build web and mobile applications
             faster. It uses React Query for auto caching, managing memory and
-            garabage collection of server state, updating "out of date" data in
+            garabage collection of server state, updating out of date data in
             the background, and performance optimizations like pagination,
             infinite scrolling and lazy loading data.
           </p>
