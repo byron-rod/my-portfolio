@@ -27,23 +27,29 @@ const WorkExperience = () => {
         <div className="absolute left-8 top-0 w-[4px] text-white" />
         <ul className="w-full flex flex-col items-start justify-between">
           <Details
+            title="Technical SEO Certification"
+            school="Blue Array Academy"
+            dates="January 2024 - Abril 2024"
+            description="Technical SEO certification with knowledge in page experience, crawlability, sitemaps, internal linking, schemas, image optimization, security, accessibility, and the best tools for a technical audit process."
+          />
+          <Details
             title="Full Stack Web Developer"
             school="4Geeks Academy"
             dates="May 2023 - September 2023"
             description="Full-Stack Development with knowledge in HTML, CSS, Bootstrap, Tailwind, JavaScript, React.js, React UI, Node.js, Express.js, Next.js, SQL, PostgreSQL, MongoDB, Python, and Flask."
           />
           <Details
-            title="Google Digital Marketing Specialization"
-            school="Google / Coursera"
+            title="Meta Social Media Marketing Specialization"
+            school="Meta / Coursera"
             dates="June 2022 - November 2022"
-            description="Digital Marketing & E-Commerce Specialization with knowledge in Google Ads, Google Analytics, Google Marketing Platform, and Google Data Studio."
+            description="Establishing and managaging a social media presence, community engagement, social media marketing, creating and managing content, advertising campaings with Ads Manager, evaluating and measuring content performance."
           />
-          <Details
+          {/* <Details
             title="Meta Certified Digital Marketing Associate"
             school="Meta"
             dates="August 2022 - October 2022"
             description="Meta Social Media Marketing Certification with knowledge in Social Media Marketing, Social Media Advertising, Social Media Management, and Social Media Analytics."
-          />
+          /> */}
         </ul>
       </div>
     </div>
