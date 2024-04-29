@@ -24,7 +24,7 @@ export default function Home() {
         <meta name="msvalidate.01" content="E3231BA4D15254EECC14130F0CE607A7" />
       </Head>
       <Header />
-      <section id="hero" className="">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
       <section id="about" className="md:snap-center">
