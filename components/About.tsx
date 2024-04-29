@@ -58,15 +58,17 @@ function About({}: Props) {
           <span className="mr-3 text-[#cabca3]">{text}</span>
         </h3>
         <p className="smallText md:text-sm lg:text-md xl:text-lg">
-          I have an educational background in clinical psychology, but my
-          professional career centers around sales, social media management, and
-          digital marketing. Over the past three years, I have been actively
-          expanding my knowledge in digital marketing, particularly in SEO,
-          Artificial Intelligence, and Data Analytics, prompting me to embark on
-          a transformative journey to become a full-stack developer. In 2023, I
-          completed a comprehensive boot camp at 4Geeks Academy, solidifying my
-          technical prowess and earning my credentials in the realm of
-          web/software development.
+          With a foundation in psychology, my journey has evolved into a
+          multifaceted career spanning over a decade, primarily focusing on
+          sales, social media management, and digital marketing. Over the past
+          three years, I've dedicated myself to continuous learning and skill
+          expansion, delving into various domains crucial to the digital
+          landscape. My expertise now encompasses a comprehensive range of
+          disciplines, including social media marketing, content optimization,
+          community engagement, search engine optimization, artificial
+          intelligence, and web development. This diverse skill set allows me to
+          navigate the complexities of modern marketing and technology with
+          confidence and proficiency.
         </p>
       </div>
     </motion.div>

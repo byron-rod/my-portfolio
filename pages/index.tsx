@@ -17,7 +17,7 @@ export default function Home() {
         <title>Byron Rodriguez Portfolio</title>
         <meta
           name="description"
-          content="My name is Byron Rodriguez. I am a full-stack web developer, software engineer, SEO specialist and
+          content="My name is Byron Rodriguez. I am a social media manager, full-stack developer, SEO specialist and
           social media marketer."
         />
         <meta name="theme-color" content="#1c1b20" />
@@ -34,10 +34,10 @@ export default function Home() {
         {/* @ts-ignore */}
         <WorkExperience />
       </section>
-      <section id="education" className="md:snap-center">
+      <section id="education" className="">
         <Education />
       </section>
-      <section id="skills" className="md:snap-center">
+      <section id="skills" className="">
         <Skills />
       </section>
       <section id="projects" className="">
