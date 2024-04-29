@@ -61,7 +61,7 @@ function About({}: Props) {
           With a foundation in psychology, my journey has evolved into a
           multifaceted career spanning over a decade, primarily focusing on
           sales, social media management, and digital marketing. Over the past
-          three years, I've dedicated myself to continuous learning and skill
+          three years, I have dedicated myself to continuous learning and skill
           expansion, delving into various domains crucial to the digital
           landscape. My expertise now encompasses a comprehensive range of
           disciplines, including social media marketing, content optimization,
