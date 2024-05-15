@@ -10,6 +10,7 @@ import foodyBuddyImg from "../public/images/foodybuddy.webp";
 import sassPortfolio from "../public/images/sass-port.webp";
 import developLanding from "../public/images/develop.webp";
 import lensLoop from "../public/images/lensloop.jpg";
+import gamer from "../public/images/gamer.webp";
 
 const Projects = () => {
   return (
@@ -33,6 +34,13 @@ const Projects = () => {
             projectUrl="/netflix"
             projectType="Full-Stack"
             aria-label="Netflix clone full stack project that has its code and demo available"
+          />
+          <ProjectsItem
+            title="Gamer Blog"
+            backgroundImg={gamer}
+            projectUrl="/gamer"
+            projectType="Front-End"
+            aria-label="Landing page"
           />
           <ProjectsItem
             title="Develop Marketing"
