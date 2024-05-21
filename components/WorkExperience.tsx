@@ -35,7 +35,7 @@ const WorkExperience = (props: Props) => {
         <ul className="w-full flex flex-col items-start justify-between">
           <Details
             position="Social Media Marketing"
-            company="Origami Management"
+            company="Freelance"
             dates="2021 - 2024"
             work="SEO specialist, social media marketing for Meta, and community manager. Optimizing content to align with SEO and marketing goals. 
             Help build brand presence with marketing campaings."

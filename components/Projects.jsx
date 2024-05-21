@@ -11,6 +11,7 @@ import sassPortfolio from "../public/images/sass-port.webp";
 import developLanding from "../public/images/develop.webp";
 import lensLoop from "../public/images/lensloop.jpg";
 import gamer from "../public/images/gamer.webp";
+import brainwave from "../public/images/brainwave.webp";
 
 const Projects = () => {
   return (
@@ -29,6 +30,13 @@ const Projects = () => {
             aria-label="Instagram clone full stack project that has its code and demo available"
           />
           <ProjectsItem
+            title="Brainwave AI"
+            backgroundImg={brainwave}
+            projectUrl="/brainwave"
+            projectType="Front-End"
+            aria-label="Brainwave AI landing page that has its code and demo available"
+          />
+          <ProjectsItem
             title="Netflix Clone"
             backgroundImg={netflixImg}
             projectUrl="/netflix"
@@ -40,7 +48,7 @@ const Projects = () => {
             backgroundImg={gamer}
             projectUrl="/gamer"
             projectType="Front-End"
-            aria-label="Landing page"
+            aria-label="Landing page for a gaming blog that has its code and demo available"
           />
           <ProjectsItem
             title="Develop Marketing"
