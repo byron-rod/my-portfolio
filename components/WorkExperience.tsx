@@ -44,7 +44,7 @@ const WorkExperience = (props: Props) => {
             position="Social Media Manager"
             company="Homes Guatemala"
             dates="2016 - 2021"
-            work="Community manager and Marketing coordinator. Content creation and video editing for company 
+            work="Community manager and Marketing coordinator. Content creation, SEO and video editing for company 
             website, Instagram, TikTok and Facebook. Copywriting for Email Marketing."
           />
           <Details
