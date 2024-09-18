@@ -79,13 +79,13 @@ const LensLoop = () => {
                 <RiRadioButtonFill className="pr-1" /> NextJS
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> Aceternity UI
+                <RiRadioButtonFill className="pr-1" /> Aceternity
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
                 <RiRadioButtonFill className="pr-1" /> TypeScript
               </p>
               <p className="text-black-600 py-2 flex items-center ml-3">
-                <RiRadioButtonFill className="pr-1" /> TailwindCSS
+                <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
             </div>
           </div>
