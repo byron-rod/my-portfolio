@@ -34,6 +34,12 @@ const WorkExperience = (props: Props) => {
         <div className="absolute left-8 top-0 w-[4px]  text-white" />
         <ul className="w-full flex flex-col items-start justify-between">
           <Details
+            position="Founder / CEO"
+            company="Inari Agency"
+            dates="2024"
+            work="Founder and currently acting CEO of web development, SEO, and social media marketing agency, also lead front-end engineer and project manager."
+          />
+          <Details
             position="Social Media Marketing"
             company="Origami Management"
             dates="2021 - 2024"
@@ -46,13 +52,6 @@ const WorkExperience = (props: Props) => {
             dates="2016 - 2021"
             work="Community manager and Marketing coordinator. Content creation, SEO and video editing for company 
             website, Instagram, TikTok and Facebook. Copywriting for Email Marketing."
-          />
-          <Details
-            position="Sales Supervisor"
-            company="Xerox Guatemala"
-            dates="2014 - 2016"
-            work="Supervisor for Customer Service Sales Representatives for Royal Carribbean Cruises and Onboarding Trainer for new representatives, 
-            assisting human resourses with recruitment."
           />
         </ul>
       </div>
