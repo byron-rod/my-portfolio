@@ -37,7 +37,7 @@ const WorkExperience = (props: Props) => {
             position="Founder / CEO"
             company="Inari Agency"
             dates="2024"
-            work="Founder and currently acting CEO of web development, SEO, and social media marketing agency, also lead front-end engineer and project manager."
+            work="Founder and currently acting CEO of web development, SEO, and social media marketing agency. Lead front-end engineer and project manager. Seemlesly integrate web development with  digital marketing."
           />
           <Details
             position="Social Media Marketing"
