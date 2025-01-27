@@ -34,10 +34,10 @@ const WorkExperience = (props: Props) => {
         <div className="absolute left-8 top-0 w-[4px]  text-white" />
         <ul className="w-full flex flex-col items-start justify-between">
           <Details
-            position="Founder / CEO"
+            position="Founder"
             company="Inari Agency"
-            dates="2024"
-            work="Founder and currently acting CEO of web development, SEO, and social media marketing agency. Lead front-end engineer and project manager. Seemlesly integrate web development with  digital marketing."
+            dates="2024 - 2025"
+            work="Founder of web development, SEO, and social media marketing agency. Lead front-end engineer and project manager. Seemlesly integrate web development with  digital marketing."
           />
           <Details
             position="Social Media Marketing"
